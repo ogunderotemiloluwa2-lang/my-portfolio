@@ -70,15 +70,16 @@ export default function Skills() {
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <motion.h2
+        <motion.div
+          className="skills-header"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="section-title"
         >
-          Skills & Technologies
-        </motion.h2>
+          <span className="eyebrow">Toolkit</span>
+          <h2 className="section-title">Skills &amp; Technologies</h2>
+        </motion.div>
 
         <motion.div
           className="skills-grid"

@@ -1,141 +1,42 @@
 .animated-background {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 100vw;
-  height: 100%;
+  inset: 0;
   z-index: -1;
   overflow: hidden;
-  background: linear-gradient(135deg, #0f172a 0%, #1a1a3e 50%, #16213e 100%);
-  box-sizing: border-box;
+  pointer-events: none;
+  background: var(--bg);
 }
 
-.floating-shape {
+/* Faint architectural grid — quiet texture, not a light show */
+.bg-grid {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(40px);
-  will-change: transform;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(120% 80% at 50% 0%, #000 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(120% 80% at 50% 0%, #000 30%, transparent 80%);
 }
 
-.floating-shape:nth-child(1) {
-  top: 20%;
-  left: 10%;
-}
-
-.floating-shape:nth-child(2) {
-  top: 50%;
-  right: 15%;
-}
-
-.floating-shape:nth-child(3) {
-  bottom: 20%;
-  left: 20%;
-}
-
-.floating-shape:nth-child(4) {
-  top: 60%;
-  left: 50%;
-}
-
-.floating-shape:nth-child(5) {
-  bottom: 30%;
-  right: 10%;
-}
-
-.gradient-orb {
+/* A single, slow, low-opacity accent wash drifting near the top */
+.bg-glow {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.05;
-  mix-blend-mode: screen;
-}
-
-.orb-1 {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, #6366f1, transparent);
-  top: 10%;
-  left: 5%;
-  animation: float 20s ease-in-out infinite;
-}
-
-.orb-2 {
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle, #8b5cf6, transparent);
-  top: 50%;
-  right: 5%;
-  animation: float 25s ease-in-out infinite reverse;
-}
-
-.orb-3 {
-  width: 280px;
-  height: 280px;
-  background: radial-gradient(circle, #d946ef, transparent);
-  bottom: 10%;
+  top: -20%;
   left: 50%;
-  animation: float 30s ease-in-out infinite;
+  width: min(900px, 90vw);
+  height: 520px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(224, 165, 74, 0.10), transparent 70%);
+  filter: blur(30px);
+  animation: bgDrift 18s ease-in-out infinite;
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  33% {
-    transform: translate(30px, -30px);
-  }
-  66% {
-    transform: translate(-20px, 20px);
-  }
+@keyframes bgDrift {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.8; }
+  50% { transform: translateX(-42%) translateY(24px); opacity: 1; }
 }
 
-@media (max-width: 768px) {
-  .floating-shape {
-    filter: blur(30px);
-  }
-
-  .gradient-orb {
-    filter: blur(60px);
-  }
-
-  .orb-1 {
-    width: 200px;
-    height: 200px;
-  }
-
-  .orb-2 {
-    width: 180px;
-    height: 180px;
-  }
-
-  .orb-3 {
-    width: 190px;
-    height: 190px;
-  }
-}
-
-@media (max-width: 480px) {
-  .floating-shape {
-    filter: blur(20px);
-  }
-
-  .gradient-orb {
-    filter: blur(40px);
-  }
-
-  .orb-1 {
-    width: 150px;
-    height: 150px;
-  }
-
-  .orb-2 {
-    width: 130px;
-    height: 130px;
-  }
-
-  .orb-3 {
-    width: 140px;
-    height: 140px;
-  }
+@media (max-width: 600px) {
+  .bg-grid { background-size: 44px 44px; }
 }

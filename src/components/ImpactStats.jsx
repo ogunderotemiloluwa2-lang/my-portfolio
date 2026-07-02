@@ -7,29 +7,25 @@ export default function ImpactStats() {
   const [isVisible, setIsVisible] = useState(false)
 
   const approaches = [
-    { 
-      label: 'Think First', 
+    {
+      label: 'Think First',
       description: 'Plan and understand requirements before coding',
-      icon: FaLightbulb, 
-      color: '#6366f1',
+      icon: FaLightbulb,
     },
-    { 
-      label: 'Clean Code', 
+    {
+      label: 'Clean Code',
       description: 'Write readable, maintainable, and scalable solutions',
-      icon: FaCode, 
-      color: '#8b5cf6',
+      icon: FaCode,
     },
-    { 
-      label: 'Test Thoroughly', 
+    {
+      label: 'Test Thoroughly',
       description: 'Ensure quality through testing and debugging',
-      icon: FaCheckCircle, 
-      color: '#d946ef',
+      icon: FaCheckCircle,
     },
-    { 
-      label: 'Iterate & Improve', 
+    {
+      label: 'Iterate & Improve',
       description: 'Continuously refine based on feedback and learning',
-      icon: FaRocket, 
-      color: '#ec4899',
+      icon: FaRocket,
     },
   ]
 
@@ -62,7 +58,8 @@ export default function ImpactStats() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="impact-stats-title">My Creative Approach</h2>
+          <span className="eyebrow">Approach</span>
+          <h2 className="impact-stats-title section-title">My Creative Approach</h2>
           <p className="impact-stats-subtitle">How I build exceptional solutions</p>
         </motion.div>
 
@@ -80,9 +77,9 @@ export default function ImpactStats() {
                 key={index}
                 className="impact-stat-card"
                 variants={itemVariants}
-                whileHover={{ y: -8, boxShadow: '0 12px 24px rgba(0, 0, 0, 0.15)' }}
+                whileHover={{ y: -4 }}
               >
-                <div className="stat-icon" style={{ background: approach.color }}>
+                <div className="stat-icon">
                   <Icon />
                 </div>
                 <h3>{approach.label}</h3>

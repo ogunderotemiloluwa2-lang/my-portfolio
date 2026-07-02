@@ -1,163 +1,98 @@
 .about {
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-  padding: 120px 40px;
-  width: 100%;
-  box-sizing: border-box;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
 }
 
-.about .container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.about .eyebrow {
+  margin-bottom: 2.25rem;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
-  padding-bottom: 1rem;
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 4px;
-  background: var(--gradient-primary);
-  border-radius: 2px;
-}
-
-.about-content {
+.about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.about-text .section-title {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.12;
+  margin-bottom: 1.75rem;
+  max-width: 20ch;
 }
 
 .about-text p {
-  margin-bottom: 1.5rem;
-  font-size: 1.0625rem;
+  font-size: 1.02rem;
   line-height: 1.8;
-  color: var(--text-muted);
+  color: var(--text-2);
+  margin-bottom: 1.2rem;
+}
+.about-text p strong,
+.about-text p:last-child {
+  margin-bottom: 0;
 }
 
 .about-highlights {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .highlight-box {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 2rem;
-  transition: var(--transition-smooth);
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
+  background: var(--bg-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  transition: var(--transition);
 }
-
-.highlight-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.15), transparent);
-  transition: left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.highlight-box:hover::before {
-  left: 100%;
-}
-
 .highlight-box:hover {
-  border-color: var(--accent-primary);
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(6, 182, 212, 0.2);
+  border-color: var(--line-2);
+  background: var(--bg-2);
+  transform: translateY(-3px);
+}
+
+.highlight-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .highlight-box h3 {
-  color: var(--accent-primary);
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.18rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.5rem;
 }
 
 .highlight-box p {
-  font-size: 0.95rem;
-  margin-bottom: 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-2);
+  margin: 0;
 }
 
-@media (max-width: 768px) {
-  .about {
-    padding: 40px 20px 40px 40px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .about-content {
+@media (max-width: 860px) {
+  .about-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
-
-  .about-text p {
-    font-size: 0.95rem;
-  }
-
-  .highlight-box {
-    padding: 1.5rem;
-  }
-
-  .highlight-box h3 {
-    font-size: 1.1rem;
+  .about-text .section-title {
+    max-width: none;
   }
 }
 
 @media (max-width: 480px) {
-  .about {
-    padding: 30px 12px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
   .about-text p {
-    font-size: 0.95rem;
-    margin-bottom: 1.2rem;
-    line-height: 1.7;
+    font-size: 0.96rem;
   }
-
-  .about-highlights {
-    gap: 1.2rem;
-  }
-
   .highlight-box {
-    padding: 1.3rem;
-    border-radius: 8px;
-  }
-
-  .highlight-box h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .highlight-box p {
-    font-size: 0.87rem;
-    line-height: 1.5;
+    padding: 1.35rem;
   }
 }

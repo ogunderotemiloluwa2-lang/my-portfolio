@@ -1,109 +1,92 @@
 import { motion } from 'framer-motion'
+import { FiLayout, FiZap, FiSmartphone } from 'react-icons/fi'
 import './About.css'
 
 export default function About() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+  const highlights = [
+    {
+      icon: <FiLayout />,
+      title: 'Interface & UX',
+      text: 'Clean, intuitive interfaces built with attention to hierarchy, accessibility, and the small details users feel but rarely notice.',
     },
-  }
+    {
+      icon: <FiZap />,
+      title: 'Performance',
+      text: 'Fast, responsive applications, optimised rendering, smooth interactions, and code that stays maintainable as it grows.',
+    },
+    {
+      icon: <FiSmartphone />,
+      title: 'Responsive by default',
+      text: 'Layouts that hold up from a 320px phone to a wide desktop, tested across real breakpoints rather than assumed.',
+    },
+  ]
 
-  const itemVariants = {
+  const item = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   }
-
-  const highlightVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
-    hover: {
-      y: -8,
-      boxShadow: '0 12px 24px rgba(6, 182, 212, 0.2)',
-      transition: { duration: 0.3 },
-    },
-  }
-
-  const highlightsContainerVariants = {
+  const stagger = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15, delayChildren: 0.3 },
-    },
+    visible: { opacity: 1, transition: { staggerChildren: 0.12 } },
   }
 
   return (
     <section id="about" className="about">
       <div className="container">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+        <motion.span
+          className="eyebrow"
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="section-title"
-        >
-          About Me
-        </motion.h2>
-
-        <motion.div
-          className="about-content"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <motion.div className="about-text" variants={itemVariants}>
-            <p>
-              I'm a front-end developer with proven expertise building beautiful, responsive, and performant user interfaces. 
-              I've created engaging front-end experiences for AI-powered medical platforms, fintech solutions, and high-traffic 
-              marketplaces that serve thousands of users with seamless interactions.
-            </p>
+          About
+        </motion.span>
 
-            <p>
-              My approach combines clean code, modern design principles, and optimal performance optimization. 
-              From interactive real-time interfaces to complex state management, I deliver engaging UI solutions 
-              that provide excellent user experiences across all devices and use cases.
-            </p>
-
-            <p>
-              I'm passionate about creating intuitive, accessible interfaces that users love interacting with. 
-              Whether it's healthcare technology, education platforms, or marketplace solutions, I focus on 
-              usability, performance, and creating delightful user experiences.
-            </p>
-          </motion.div>
-
+        <div className="about-grid">
           <motion.div
-            className="about-highlights"
-            variants={highlightsContainerVariants}
+            className="about-text"
+            variants={stagger}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <motion.div className="highlight-box" variants={highlightVariants} whileHover="hover">
-              <h3>🎨 UI/UX Design</h3>
-              <p>Creating beautiful, intuitive user interfaces with attention to detail, accessibility, and user experience</p>
-            </motion.div>
-            <motion.div className="highlight-box" variants={highlightVariants} whileHover="hover">
-              <h3>⚡ Performance</h3>
-              <p>Building fast, responsive applications optimized for speed, smooth animations, and seamless interactions</p>
-            </motion.div>
-            <motion.div className="highlight-box" variants={highlightVariants} whileHover="hover">
-              <h3>📱 Responsive Design</h3>
-              <p>Crafting pixel-perfect interfaces that work beautifully on all devices - desktop, tablet, and mobile</p>
-            </motion.div>
+            <motion.h2 className="section-title" variants={item}>
+              Frontend developer focused on interfaces that feel effortless.
+            </motion.h2>
+            <motion.p variants={item}>
+              I build beautiful, responsive, and performant user interfaces. My work spans
+              AI-powered platforms, fintech tools, and high-traffic marketplaces, products used by
+              thousands of people who expect them to just work.
+            </motion.p>
+            <motion.p variants={item}>
+              My approach pairs clean code with modern design principles and real performance
+              discipline, from interactive real-time interfaces to complex state management. Recently
+              I've been building EventFlow, an event-management platform with live check-in, QR passes,
+              and analytics.
+            </motion.p>
+            <motion.p variants={item}>
+              Above all, I care about intuitive, accessible experiences, whether the domain is
+              healthcare, education, or events, that people genuinely enjoy using.
+            </motion.p>
           </motion.div>
-        </motion.div>
+
+          <motion.div
+            className="about-highlights"
+            variants={stagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {highlights.map((h) => (
+              <motion.div className="highlight-box" key={h.title} variants={item}>
+                <span className="highlight-icon">{h.icon}</span>
+                <h3>{h.title}</h3>
+                <p>{h.text}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   )

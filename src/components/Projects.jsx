@@ -14,19 +14,11 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <motion.h2
-            className="section-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Featured Projects
-          </motion.h2>
+          <span className="eyebrow">Selected work</span>
+          <h2 className="section-title">Projects</h2>
           <p className="projects-subtitle">
-            Each project represents a real-world solution, built with React and modern tools.
-            <br />
-            From AI assistants to ticketing platforms, these showcase my ability to solve complex problems.
+            Real products built with React and modern tooling, from my EventFlow startup to
+            AI assistants and ticketing platforms, each solving a genuine problem end to end.
           </p>
         </motion.div>
 

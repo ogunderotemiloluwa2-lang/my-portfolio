@@ -1,4 +1,5 @@
 import { FaCode, FaPalette, FaRocket, FaMobile, FaClock, FaAward } from 'react-icons/fa';
+import { FiCheck } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import './Services.css';
 
@@ -54,17 +55,15 @@ function Services() {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     hover: {
-      y: -8,
-      boxShadow: '0 20px 40px rgba(6, 182, 212, 0.2)',
+      y: -4,
       transition: { duration: 0.3 },
     },
   }
 
   const iconVariants = {
     hover: {
-      scale: 1.15,
-      rotate: 5,
-      transition: { type: 'spring', stiffness: 300, damping: 10 },
+      scale: 1.08,
+      transition: { type: 'spring', stiffness: 300, damping: 12 },
     },
   }
 
@@ -78,7 +77,8 @@ function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2>What I Offer</h2>
+          <span className="eyebrow">Services</span>
+          <h2 className="section-title">What I Offer</h2>
           <p>Comprehensive solutions for your development needs</p>
         </motion.div>
 
@@ -105,7 +105,10 @@ function Services() {
                 <p>{service.description}</p>
                 <ul className="service-features">
                   {service.features.map((feature) => (
-                    <li key={feature}>✓ {feature}</li>
+                    <li key={feature}>
+                      <FiCheck className="feature-check" aria-hidden="true" />
+                      <span>{feature}</span>
+                    </li>
                   ))}
                 </ul>
               </motion.div>

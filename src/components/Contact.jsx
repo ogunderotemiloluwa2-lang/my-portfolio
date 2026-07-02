@@ -95,15 +95,16 @@ export default function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <motion.h2
+        <motion.div
+          className="contact-header"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="section-title"
         >
-          Get In Touch
-        </motion.h2>
+          <span className="eyebrow">Contact</span>
+          <h2 className="section-title">Get In Touch</h2>
+        </motion.div>
 
         <motion.div
           className="contact-content"
@@ -198,7 +199,7 @@ export default function Contact() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
               >
-                ✓ Message sent successfully! I'll get back to you soon.
+                Message sent successfully! I'll get back to you soon.
               </motion.p>
             )}
           </motion.form>
