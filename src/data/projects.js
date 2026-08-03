@@ -66,7 +66,7 @@ export const projects = [
     description:
       'A full-stack developer network where engineers find collaborators for side projects, discover AI tools they actually ship with, and share build-in-public updates. Built as a React/Vite/Tailwind frontend consuming a Node.js/Express/MongoDB REST API with JWT auth, Socket.IO real-time messaging, Cloudinary media uploads, and Swagger-documented endpoints. The backend was developed incrementally across 11 phases covering auth, profiles, social feed, follows, communities, project collaboration, AI tool directory, real-time chat, notifications, search, and a consolidation audit pass.',
     image:
-      'https://images.unsplash.com/photo-1507691920705-40c078003986?w=900&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1522199710521-72d696141776?w=900&h=600&fit=crop',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.IO', 'JWT Auth', 'Cloudinary', 'Swagger'],
     github: 'https://github.com/ogunderotemiloluwa2-lang/devlink',
     live: 'https://devlinkconnect.vercel.app/',
