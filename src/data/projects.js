@@ -71,4 +71,15 @@ export const projects = [
     github: 'https://github.com/ogunderotemiloluwa2-lang/devlink',
     live: 'https://devlinkconnect.vercel.app/',
   },
+  {
+    id: 7,
+    title: 'LG CUT — Barber Appointment Platform',
+    description:
+      'A full-stack barber booking platform for LG CUT (FUNAAB & Abeokuta, Ogun State). Customers book in-shop or home-service appointments online, with a password-protected admin dashboard for managing bookings and availability. Users browse a service gallery, choose between visiting the shop or a home-service address, pick an available time slot, and confirm — with live price calculation. The backend validates service areas, enforces working hours and booking conflicts, and sends instant notifications to the owner via email (Formspree) and Telegram simultaneously. Deployed with the React frontend on Netlify and the Node/Express API on Render.',
+    image:
+      'https://images.unsplash.com/photo-1503602642458-232111445657?w=900&h=600&fit=crop',
+    tags: ['React', 'Node.js', 'Express', 'Vite', 'Full-Stack', 'REST API', 'Booking System', 'Netlify', 'Render', 'Telegram Bot API'],
+    github: 'https://github.com/ogunderotemiloluwa2-lang/frontend-LGcut',
+    live: 'https://lg-barbing.netlify.app',
+  },
 ]
