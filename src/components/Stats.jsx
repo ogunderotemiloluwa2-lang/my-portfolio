@@ -6,7 +6,7 @@ function Stats() {
   const stats = [
     {
       icon: FaUsers,
-      number: '8',
+      number: '15+',
       label: 'Projects Shipped',
       description: 'Apps I built and put online, not just tutorials'
     },

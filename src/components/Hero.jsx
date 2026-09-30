@@ -51,7 +51,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.ul className="hero-meta" variants={item}>
-            <li><strong>8</strong><span>Projects shipped</span></li>
+            <li><strong>15+</strong><span>Projects shipped</span></li>
             <li><strong>3 yrs</strong><span>Writing React</span></li>
             <li><strong>Lagos</strong><span>Based in</span></li>
           </motion.ul>
