@@ -52,7 +52,7 @@ export default function Navbar() {
     >
       <div className="navbar-container">
         <div className="navbar-brand">
-          <h1>Samson Ogundero</h1>
+          <h1>Ogundero Samson</h1>
         </div>
 
         <button 

@@ -7,39 +7,39 @@ function Services() {
   const services = [
     {
       icon: FaCode,
-      title: 'React Development',
-      description: 'Custom React applications built with modern best practices. Component architecture, state management, hooks, and performance optimization for production-ready applications.',
-      features: ['React Components', 'State Management', 'Custom Hooks', 'Code Quality'],
+      title: 'React apps, built to last',
+      description: 'I build React front ends that are easy to hand over. Clear components, sensible state, and no clever tricks that break the moment someone else edits the code.',
+      features: ['Component architecture', 'State management', 'Custom hooks', 'Readable code'],
     },
     {
       icon: FaPalette,
-      title: 'UI/UX Implementation',
-      description: 'Transform designs into responsive, interactive interfaces. Pixel-perfect implementation with attention to user experience, accessibility, and design consistency.',
-      features: ['Responsive Design', 'Interactive UI', 'Accessibility', 'Design Implementation'],
+      title: 'Designs turned into real pages',
+      description: 'Give me a Figma file or even a rough sketch and I will build it. I match spacing, type, and states closely, and I flag the parts that will not work on a phone.',
+      features: ['Figma to code', 'Responsive layouts', 'Accessible markup', 'Consistent spacing'],
     },
     {
       icon: FaMobile,
-      title: 'Responsive Design',
-      description: 'Create beautiful interfaces that work seamlessly across all devices. Mobile-first approach, fluid layouts, and touch-friendly interactions for optimal user experience.',
-      features: ['Mobile-First', 'Responsive Layouts', 'Cross-Device Testing', 'Performance'],
+      title: 'Works on cheap phones',
+      description: 'Most of my users are on mid-range Android over slow data. I build for that first, so the site feels fast for everyone else too.',
+      features: ['Mobile-first', 'Tested on real devices', 'Touch-friendly', 'Light on data'],
     },
     {
       icon: FaRocket,
-      title: 'Performance Optimization',
-      description: 'Build fast, efficient applications that users love. Code splitting, lazy loading, image optimization, and rendering performance improvements for lightning-fast experiences.',
-      features: ['Code Optimization', 'Lazy Loading', 'Caching Strategy', 'Performance Metrics'],
+      title: 'Making slow pages fast',
+      description: 'If your app feels sluggish, I will find out why. Usually it is images, unnecessary re-renders, or a bundle that grew without anyone noticing.',
+      features: ['Bundle trimming', 'Lazy loading', 'Image optimisation', 'Render profiling'],
     },
     {
       icon: FaClock,
-      title: 'Quick Development',
-      description: 'Rapid development and deployment of front-end solutions. Fast turnaround without compromising code quality, using agile practices and modern tooling.',
-      features: ['Fast Delivery', 'Agile Approach', 'Clean Code', 'Easy Maintenance'],
+      title: 'Working to a deadline',
+      description: 'I have shipped under real deadlines, including a booking site that had to be live before a shop opened. I scope honestly and tell you early if something will slip.',
+      features: ['Clear scope', 'Regular updates', 'Honest timelines', 'No surprises'],
     },
     {
       icon: FaAward,
-      title: 'Code Mentorship',
-      description: 'Help your team write better React code. Code reviews, best practices guidance, architecture decisions, and technical mentorship for growing developers.',
-      features: ['Code Review', 'Best Practices', 'Architecture Help', 'Team Growth'],
+      title: 'Helping other developers',
+      description: 'I review code and help newer developers get unstuck. Not lectures — just sitting with the code and figuring out what is actually wrong.',
+      features: ['Code review', 'Debugging help', 'React guidance', 'Pairing sessions'],
     },
   ];
 
@@ -78,8 +78,8 @@ function Services() {
           transition={{ duration: 0.6 }}
         >
           <span className="eyebrow">Services</span>
-          <h2 className="section-title">What I Offer</h2>
-          <p>Comprehensive solutions for your development needs</p>
+          <h2 className="section-title">What I can help with</h2>
+          <p>Straightforward work, done properly</p>
         </motion.div>
 
         <motion.div

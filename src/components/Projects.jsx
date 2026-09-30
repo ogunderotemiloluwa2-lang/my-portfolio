@@ -17,8 +17,8 @@ export default function Projects() {
           <span className="eyebrow">Selected work</span>
           <h2 className="section-title">Projects</h2>
           <p className="projects-subtitle">
-            Real products built with React and modern tooling, from my EventFlow startup to
-            AI assistants and ticketing platforms, each solving a genuine problem end to end.
+            Things I have actually built and put online. Some are client work, some are my own
+            products, and a couple started as ideas I wanted to see working.
           </p>
         </motion.div>
 

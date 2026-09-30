@@ -27,17 +27,18 @@ export default function Hero() {
           </motion.span>
 
           <motion.h1 variants={item}>
-            Samson Ogundero
+            Ogundero Samson
           </motion.h1>
 
           <motion.p className="hero-role" variants={item}>
-            Frontend Developer <span className="hero-amp">&amp;</span> <em>React specialist</em>
+            Front-End Developer <span className="hero-amp">&amp;</span> <em>React</em>
           </motion.p>
 
           <motion.p className="hero-lead" variants={item}>
-            I turn complex product requirements into polished, accessible interfaces, from
-            AI platforms serving 1,000+ users to <strong>EventFlow</strong>, my own event-management
-            startup. I care about performance, clean code, and details that make a product feel effortless.
+            I build web apps that people actually use — booking systems, dashboards, and
+            marketplaces. Right now I'm running <strong>EventFlow</strong>, an event platform I
+            built from scratch, and shipping client work on the side. I like the unglamorous
+            parts: making forms behave, keeping pages fast, and fixing the bugs nobody else wants to touch.
           </motion.p>
 
           <motion.div className="hero-buttons" variants={item}>
@@ -50,9 +51,9 @@ export default function Hero() {
           </motion.div>
 
           <motion.ul className="hero-meta" variants={item}>
-            <li><strong>6+</strong><span>Products shipped</span></li>
-            <li><strong>1,000+</strong><span>Users served</span></li>
-            <li><strong>React</strong><span>Core stack</span></li>
+            <li><strong>8</strong><span>Projects shipped</span></li>
+            <li><strong>3 yrs</strong><span>Writing React</span></li>
+            <li><strong>Lagos</strong><span>Based in</span></li>
           </motion.ul>
         </motion.div>
       </div>

@@ -5,27 +5,27 @@ import './Timeline.css'
 export default function Timeline() {
   const timelineEvents = [
     {
-      year: 'HTML & CSS',
-      title: 'Web Fundamentals',
-      description: 'Mastered semantic HTML and modern CSS including Flexbox, Grid, and responsive design principles.',
+      year: '2022',
+      title: 'Started with HTML and CSS',
+      description: 'Built my first static pages by hand. Learned Flexbox and Grid the hard way — by breaking layouts and rebuilding them until they held.',
       icon: FaCode,
     },
     {
-      year: 'React & Modern Frontend',
-      title: 'Interactive Development',
-      description: 'Built strong proficiency in React, ES6+, hooks, component-based architecture, and creating dynamic user interfaces.',
+      year: '2023',
+      title: 'Moved into React',
+      description: 'Rebuilt my old projects as React apps. This is where components, hooks, and state finally clicked for me.',
       icon: FaRocket,
     },
     {
-      year: 'State Management',
-      title: 'Advanced Frontend',
-      description: 'Mastered advanced React patterns including hooks, context API, state management, and component optimization techniques.',
+      year: '2024',
+      title: 'Started building full products',
+      description: 'Went past tutorials and shipped real apps — booking systems, marketplaces, and dashboards with real users and real bugs.',
       icon: FaBriefcase,
     },
     {
-      year: 'Advanced Tools',
-      title: 'Professional Workflow',
-      description: 'Mastered Vite, git/GitHub, API design, authentication, and modern development best practices.',
+      year: '2025',
+      title: 'Full-stack and deployment',
+      description: 'Learned to build and deploy the backend too — Node, Express, MongoDB, auth, and getting everything live on Netlify, Vercel, and Render.',
       icon: FaAward,
     },
   ]
@@ -60,8 +60,8 @@ export default function Timeline() {
           viewport={{ once: true }}
         >
           <span className="eyebrow">Journey</span>
-          <h2 className="section-title timeline-title">Technical Achievements</h2>
-          <p className="timeline-subtitle">Key skills and expertise I've developed</p>
+          <h2 className="section-title timeline-title">How I got here</h2>
+          <p className="timeline-subtitle">A short version of the last few years</p>
         </motion.div>
 
         <motion.div

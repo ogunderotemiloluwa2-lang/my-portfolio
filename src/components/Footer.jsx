@@ -43,8 +43,8 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <motion.div className="footer-section footer-brand" variants={itemVariants}>
-            <h3>Samson Ogundero</h3>
-            <p>Senior Frontend Engineer</p>
+            <h3>Ogundero Samson</h3>
+            <p>Front-End Developer</p>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-muted-dark)' }}>Lagos, Nigeria</p>
           </motion.div>
 
@@ -98,7 +98,7 @@ export default function Footer() {
           transition={{ delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <p>© {currentYear} Samson Ogundero. All rights reserved.</p>
+          <p>© {currentYear} Ogundero Samson. All rights reserved.</p>
           <p>Built with React, Vite, and Framer Motion</p>
         </motion.div>
       </div>

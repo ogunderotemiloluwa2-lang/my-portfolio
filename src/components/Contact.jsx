@@ -62,7 +62,7 @@ export default function Contact() {
     {
       icon: FiLinkedin,
       label: 'LinkedIn',
-      value: 'Samson Ogundero',
+      value: 'Ogundero Samson',
       link: 'https://www.linkedin.com/in/samson-ogundero-6948b13b2',
     },
     {
@@ -114,11 +114,11 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <motion.div className="contact-info" variants={itemVariants}>
-            <h3>Ready to Build Something Great?</h3>
+            <h3>Got something you need built?</h3>
             <p>
-              I'm available for frontend projects, UI/UX implementation, and building beautiful responsive interfaces. 
-              Have an idea for an AI-powered app, marketplace, or platform? I specialize in crafting high-performance 
-              React applications with polished user experiences. Let's discuss how I can help bring your vision to life.
+              I'm open to front-end work — new builds, fixing up an existing React app, or
+              helping out on a team. If you have a project in mind, send me a message with a
+              bit of detail and I'll get back to you. I usually reply within a day.
             </p>
 
             <div className="contact-links">

@@ -6,18 +6,18 @@ export default function About() {
   const highlights = [
     {
       icon: <FiLayout />,
-      title: 'Interface & UX',
-      text: 'Clean, intuitive interfaces built with attention to hierarchy, accessibility, and the small details users feel but rarely notice.',
+      title: 'Interfaces people can use',
+      text: 'I test on a real phone, not just a resized browser window. If a form is confusing or a button is too small to tap, it gets fixed before it ships.',
     },
     {
       icon: <FiZap />,
-      title: 'Performance',
-      text: 'Fast, responsive applications, optimised rendering, smooth interactions, and code that stays maintainable as it grows.',
+      title: 'Speed that holds up',
+      text: 'I profile before I optimise. Most of my apps load in under two seconds on a mid-range Android over 3G, which is what my users actually have.',
     },
     {
       icon: <FiSmartphone />,
-      title: 'Responsive by default',
-      text: 'Layouts that hold up from a 320px phone to a wide desktop, tested across real breakpoints rather than assumed.',
+      title: 'Built mobile-first',
+      text: 'Most of my traffic comes from phones, so that is where I start. Desktop is the easy part once the small screen works.',
     },
   ]
 
@@ -52,22 +52,21 @@ export default function About() {
             viewport={{ once: true }}
           >
             <motion.h2 className="section-title" variants={item}>
-              Frontend developer focused on interfaces that feel effortless.
+              I build the front end, and I make sure it actually works.
             </motion.h2>
             <motion.p variants={item}>
-              I build beautiful, responsive, and performant user interfaces. My work spans
-              AI-powered platforms, fintech tools, and high-traffic marketplaces, products used by
-              thousands of people who expect them to just work.
+              I'm a front-end developer based in Lagos. I mostly work in React, and I've spent the
+              last few years building things end to end — from a barber booking site for a shop in
+              Abeokuta to EventFlow, the event platform I run myself.
             </motion.p>
             <motion.p variants={item}>
-              My approach pairs clean code with modern design principles and real performance
-              discipline, from interactive real-time interfaces to complex state management. Recently
-              I've been building EventFlow, an event-management platform with live check-in, QR passes,
-              and analytics.
+              I didn't come from a bootcamp or a big company. I learned by building real projects,
+              breaking them, and fixing them. That means I'm comfortable with the messy parts: wiring
+              up an API, debugging a booking conflict, or figuring out why a page is slow on a cheap phone.
             </motion.p>
             <motion.p variants={item}>
-              Above all, I care about intuitive, accessible experiences, whether the domain is
-              healthcare, education, or events, that people genuinely enjoy using.
+              What I care about is simple — does it work, is it fast, and can a normal person use it
+              without being told how. Everything else is detail.
             </motion.p>
           </motion.div>
 

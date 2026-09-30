@@ -14,7 +14,7 @@ export const projects = [
     id: 1,
     title: 'PA Boss — AI Personal Assistant',
     description:
-      'An intelligent personal assistant platform powered by AI to help users execute their goals with precision. Features AI-powered recommendations, real-time habit tracking, progress monitoring, and secure data encryption. Trusted by 1,000+ active users tracking 50k+ goals with a 98% success rate.',
+      'A personal assistant app that helps you set goals and actually stick to them. You add what you want to achieve, and it breaks it into steps, tracks your progress, and nudges you when you go quiet. Built with React and an AI API for the suggestions, with habit tracking and progress charts.',
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
     tags: ['React', 'AI/ML', 'Real-time Updates', 'Data Encryption'],
     github: 'https://github.com/Ogunderotamiloluwa',
@@ -24,7 +24,7 @@ export const projects = [
     id: 2,
     title: 'Beacon Scholar Foundation',
     description:
-      'Comprehensive scholarship and grant administration platform managing a $366M+ endowment. Includes a mentor network, resource library, application tracking, and support community for 1,240+ scholars across all 50 states.',
+      'A scholarship and grant platform built for a foundation moving off spreadsheets. Applicants fill in a long multi-step form that saves progress automatically, then track their status without emailing the office. Includes mentor matching and a resource library.',
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&h=300&fit=crop',
     tags: ['React', 'Payment Processing', 'Advanced Forms', 'Email Automation'],
     github: 'https://github.com/Ogunderotamiloluwa',
@@ -34,7 +34,7 @@ export const projects = [
     id: 3,
     title: 'WorldCups — FIFA 2026 Ticket Booking',
     description:
-      'Ticket booking platform for the 2026 FIFA World Cup covering all 64 matches across 5 stadiums. Users browse matches, pick seats from interactive maps with VIP/Regular/Economy options, pay securely, and receive instant QR confirmations, with 12,800+ seats and real-time booking updates.',
+      'A ticket booking concept for the 2026 World Cup. You browse matches, pick a seat from an interactive stadium map with VIP, Regular, and Economy tiers, pay through Stripe, and get a QR ticket. The seat map was the interesting part - keeping taken seats in sync as people book.',
     image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&h=300&fit=crop',
     tags: ['React', 'Stripe', 'Interactive Seat Maps', 'QR Tickets'],
     github: 'https://github.com/Ogunderotamiloluwa',
@@ -52,9 +52,9 @@ export const projects = [
   },
   {
     id: 5,
-    title: 'SymptomChat — AI Medical Assessment',
+    title: 'SymptomChat — AI Symptom Checker',
     description:
-      'An AI-powered symptom checker providing instant, evidence-based medical assessments through anonymous chat-based consultations, with complete privacy and no data collection.',
+      'A chat-based symptom checker that gives a rough assessment without asking for any personal details. Built it because most health tools want your data before they tell you anything. Uses a medical AI API, and nothing you type is stored.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=300&fit=crop',
     tags: ['React', 'AI/ML', 'Medical API', 'Privacy-Focused'],
     github: 'https://github.com/Ogunderotamiloluwa',

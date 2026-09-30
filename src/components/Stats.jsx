@@ -6,27 +6,27 @@ function Stats() {
   const stats = [
     {
       icon: FaUsers,
-      number: '50K+',
-      label: 'Users Across Platforms',
-      description: 'Real users relying on solutions I built'
+      number: '8',
+      label: 'Projects Shipped',
+      description: 'Apps I built and put online, not just tutorials'
     },
     {
       icon: FaCode,
       number: '3',
-      label: 'Production Apps',
-      description: 'Live applications handling real traffic'
+      label: 'Live Products',
+      description: 'Currently running with real users'
     },
     {
       icon: FaRocket,
-      number: '$366M+',
-      label: 'Platform Value',
-      description: 'Beacon Scholar endowment supporting 1,240+ scholars'
+      number: '3 yrs',
+      label: 'Writing React',
+      description: 'Since I rebuilt my first project as a React app'
     },
     {
       icon: FaClock,
-      number: '1000+',
-      label: 'Concurrent Users',
-      description: 'HolidayTix peak traffic handling capacity'
+      number: '<2s',
+      label: 'Typical Load Time',
+      description: 'On a mid-range phone over 3G'
     },
   ];
 
