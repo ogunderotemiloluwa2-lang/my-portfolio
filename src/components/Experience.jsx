@@ -6,12 +6,12 @@ export default function Experience() {
   const experiences = [
     {
       id: 1,
-      title: 'Freelance Front-End Developer',
+      title: 'Freelance Web Developer',
       company: 'Self-employed',
       period: '2023 — Present',
       location: 'Lagos, Nigeria (Remote)',
       description:
-        'Building and shipping production applications for clients across healthcare, fintech, and marketplace sectors. I handle the full front-end lifecycle — from initial scoping and architecture to deployment and post-launch fixes.',
+        'Building and shipping production applications for clients across healthcare, fintech, and marketplace sectors. I handle the full web development lifecycle — from initial scoping and architecture to deployment and post-launch fixes.',
       highlights: [
         'Shipped 8+ production applications with real users, deployed on Netlify and Vercel',
         'Reduced client support tickets by 70% through proactive bug fixes and clear handover docs',
@@ -45,7 +45,7 @@ export default function Experience() {
     },
     {
       id: 3,
-      title: 'Front-End Developer',
+      title: 'Web Developer',
       company: 'LG CUT Barber Platform',
       period: '2023 — 2024',
       location: 'Abeokuta, Nigeria',

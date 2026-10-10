@@ -13,7 +13,7 @@ import './Skills.css'
 export default function Skills() {
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Web Development',
       skills: [
         { name: 'React', icon: FaReact, color: '#61dafb' },
         { name: 'HTML5', icon: FaHtml5, color: '#e34c26' },

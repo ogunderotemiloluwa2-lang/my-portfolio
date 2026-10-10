@@ -44,7 +44,7 @@ export default function Footer() {
         >
           <motion.div className="footer-section footer-brand" variants={itemVariants}>
             <h3>Ogundero Samson</h3>
-            <p>Front-End Developer</p>
+            <p>Web Developer</p>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-muted-dark)' }}>Lagos, Nigeria</p>
           </motion.div>
 
@@ -64,15 +64,12 @@ export default function Footer() {
                 <a href="#projects">Projects</a>
               </li>
               <li>
-<<<<<<< HEAD
                 <a href="#experience">Experience</a>
               </li>
               <li>
                 <a href="#testimonials">Testimonials</a>
               </li>
               <li>
-=======
->>>>>>> 75fb0f2f431f0892c454065b3655ad6835e18e61
                 <a href="#contact">Contact</a>
               </li>
             </ul>

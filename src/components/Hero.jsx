@@ -31,7 +31,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p className="hero-role" variants={item}>
-            Front-End Developer <span className="hero-amp">&amp;</span> <em>React</em>
+            Web Developer <span className="hero-amp">&amp;</span> <em>React</em>
           </motion.p>
 
           <motion.p className="hero-lead" variants={item}>
@@ -52,7 +52,7 @@ export default function Hero() {
 
           <motion.ul className="hero-meta" variants={item}>
             <li><strong>15+</strong><span>Projects shipped</span></li>
-            <li><strong>3 yrs</strong><span>Writing React</span></li>
+            <li><strong>3 yrs</strong><span>Building web apps</span></li>
             <li><strong>Lagos</strong><span>Based in</span></li>
           </motion.ul>
         </motion.div>

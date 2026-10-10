@@ -52,10 +52,10 @@ export default function About() {
             viewport={{ once: true }}
           >
             <motion.h2 className="section-title" variants={item}>
-              I build the front end, and I make sure it actually works.
+              I build web apps, and I make sure they actually work.
             </motion.h2>
             <motion.p variants={item}>
-              I'm a front-end developer based in Lagos. I mostly work in React, and I've spent the
+              I'm a web developer based in Lagos. I mostly work in React, and I've spent the
               last few years building things end to end — from a barber booking site for a shop in
               Abeokuta to EventFlow, the event platform I run myself.
             </motion.p>
