@@ -1,0 +1,122 @@
+/* =========================================================
+   Impact / Approach — warm-dark editorial
+   ========================================================= */
+
+.impact-stats-section {
+  border-top: 1px solid var(--line);
+  background: var(--bg-1);
+}
+
+.impact-stats-container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.impact-stats-header {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 3.25rem;
+}
+
+.impact-stats-header .eyebrow {
+  margin-bottom: 1rem;
+}
+
+.impact-stats-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+
+.impact-stats-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: var(--text-2);
+}
+
+.impact-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.impact-stat-card {
+  background: var(--bg-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.8rem 1.6rem;
+  text-align: left;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.impact-stat-card:hover {
+  border-color: var(--accent);
+  background: var(--bg-2);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+/* Amber icon chip */
+.stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1.15rem;
+  font-size: 1.15rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.impact-stat-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.impact-stat-card p {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+/* ---- Tablet ---- */
+@media (max-width: 860px) {
+  .impact-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 600px) {
+  .impact-stats-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .impact-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .impact-stat-card {
+    padding: 1.5rem 1.35rem;
+  }
+}
+
+/* ---- Small ---- */
+@media (max-width: 400px) {
+  .impact-stat-card {
+    padding: 1.35rem 1.15rem;
+  }
+}

@@ -1,0 +1,196 @@
+/* ===== Experience — warm-dark editorial ===== */
+
+.experience {
+  padding: clamp(64px, 9vw, 120px) 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.experience .container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: clamp(48px, 6vw, 72px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.experience-header .eyebrow {
+  margin-bottom: 1rem;
+}
+
+.experience .section-title {
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  margin: 0;
+}
+
+.experience-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  color: var(--text-2);
+  max-width: 46ch;
+  margin: 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.experience-item {
+  display: flex;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  align-items: flex-start;
+}
+
+.experience-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.experience-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.experience-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.experience-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 500;
+  color: var(--text);
+  margin: 0;
+}
+
+.experience-period {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.experience-company {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-2);
+  margin: 0;
+}
+
+.experience-description {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-2);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.experience-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+.highlight-bullet {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 0.35rem;
+  flex-shrink: 0;
+}
+
+.experience-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.experience-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-2);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.experience-link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+  }
+
+  .experience-header-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .experience-period {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .experience-title {
+    font-size: 1.15rem;
+  }
+
+  .experience-highlights li {
+    font-size: 0.85rem;
+  }
+}

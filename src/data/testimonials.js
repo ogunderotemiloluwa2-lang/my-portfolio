@@ -1,0 +1,38 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Barbershop Owner',
+    company: 'LG CUT',
+    role: 'Owner',
+    text: 'Before this site, customers called me to book and I would forget half of them. Now they book online and I just check my phone. It paid for itself in the first month.',
+    rating: 5,
+    image: 'https://i.pravatar.cc/150?img=12',
+  },
+  {
+    id: 2,
+    name: 'Event Organiser',
+    company: 'EventFlow',
+    role: 'Early User',
+    text: 'The check-in with QR codes saved us a long queue at the door. Samson was quick to fix a small issue we had on the day, which honestly mattered more than anything.',
+    rating: 5,
+    image: 'https://i.pravatar.cc/150?img=33',
+  },
+  {
+    id: 3,
+    name: 'Fellow Developer',
+    company: 'Freelance',
+    role: 'Front-End Developer',
+    text: 'I got stuck on a state bug for two days. Samson looked at it for ten minutes and pointed out the problem. He explains things without making you feel stupid.',
+    rating: 5,
+    image: 'https://i.pravatar.cc/150?img=52',
+  },
+  {
+    id: 4,
+    name: 'Small Business Owner',
+    company: 'Retail Client',
+    role: 'Owner',
+    text: 'He told me upfront what he could and could not do, and stuck to the price. The site is simple and fast, which is all I wanted.',
+    rating: 5,
+    image: 'https://i.pravatar.cc/150?img=68',
+  },
+];
