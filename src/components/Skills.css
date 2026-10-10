@@ -101,15 +101,6 @@
   display: block;
 }
 
-.skill-level {
-  font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
 .skill-item:hover span {
   color: var(--text);
 }

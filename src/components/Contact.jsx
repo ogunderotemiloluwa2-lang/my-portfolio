@@ -114,6 +114,7 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <motion.div className="contact-info" variants={itemVariants}>
+<<<<<<< HEAD
             <h3>Ready to build something great?</h3>
             <p>
               I'm open to front-end roles — whether that's joining a team as a React developer,
@@ -136,6 +137,15 @@ export default function Contact() {
               </div>
             </div>
 
+=======
+            <h3>Got something you need built?</h3>
+            <p>
+              I'm open to front-end work — new builds, fixing up an existing React app, or
+              helping out on a team. If you have a project in mind, send me a message with a
+              bit of detail and I'll get back to you. I usually reply within a day.
+            </p>
+
+>>>>>>> 75fb0f2f431f0892c454065b3655ad6835e18e61
             <div className="contact-links">
               {contactLinks.map((item, idx) => {
                 const Icon = item.icon

@@ -64,12 +64,15 @@ export default function Footer() {
                 <a href="#projects">Projects</a>
               </li>
               <li>
+<<<<<<< HEAD
                 <a href="#experience">Experience</a>
               </li>
               <li>
                 <a href="#testimonials">Testimonials</a>
               </li>
               <li>
+=======
+>>>>>>> 75fb0f2f431f0892c454065b3655ad6835e18e61
                 <a href="#contact">Contact</a>
               </li>
             </ul>

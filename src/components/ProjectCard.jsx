@@ -3,7 +3,7 @@ import { FiGithub, FiExternalLink, FiArrowUpRight } from 'react-icons/fi'
 import './ProjectCard.css'
 
 export default function ProjectCard({ project, index }) {
-  const { featured, github, live, metrics, role } = project
+  const { featured, github, live } = project
 
   const cardVariants = {
     hidden: { opacity: 0, y: 28 },
@@ -29,20 +29,8 @@ export default function ProjectCard({ project, index }) {
 
       <div className="project-content">
         <div className="project-body">
-          {role && <span className="project-role">{role}</span>}
           <h3>{project.title}</h3>
           <p>{project.description}</p>
-
-          {metrics && metrics.length > 0 && (
-            <ul className="project-metrics">
-              {metrics.map((metric, i) => (
-                <li key={i} className="metric-item">
-                  <span className="metric-bullet" aria-hidden="true" />
-                  {metric}
-                </li>
-              ))}
-            </ul>
-          )}
 
           <ul className="project-tags">
             {project.tags.map((tag) => (

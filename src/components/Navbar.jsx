@@ -20,8 +20,6 @@ export default function Navbar() {
     { label: 'Skills', id: 'skills' },
     { label: 'Services', id: 'services' },
     { label: 'Projects', id: 'projects' },
-    { label: 'Experience', id: 'experience' },
-    { label: 'Testimonials', id: 'testimonials' },
     { label: 'Contact', id: 'contact' },
   ]
 

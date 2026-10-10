@@ -5,15 +5,9 @@ import {
   FaCss3Alt, 
   FaGitAlt, 
   FaGithub,
-  FaNodeJs,
-  FaJs,
-  FaServer,
-  FaShieldAlt,
-  FaFigma,
-  FaChrome,
-  FaNetworkWired,
+  FaNodeJs
 } from 'react-icons/fa'
-import { SiNetlify, SiVercel, SiMongodb, SiTypescript, SiFramer, SiVite, SiEslint, SiJest, SiTestinglibrary } from 'react-icons/si'
+import { SiNetlify, SiVercel, SiMongodb } from 'react-icons/si'
 import './Skills.css'
 
 export default function Skills() {
@@ -21,43 +15,26 @@ export default function Skills() {
     {
       title: 'Frontend Development',
       skills: [
-        { name: 'React', icon: FaReact, color: '#61dafb', level: 'Advanced' },
-        { name: 'HTML5', icon: FaHtml5, color: '#e34c26', level: 'Expert' },
-        { name: 'CSS3', icon: FaCss3Alt, color: '#1572b6', level: 'Advanced' },
-        { name: 'JavaScript', icon: FaJs, color: '#f7df1e', level: 'Advanced' },
-        { name: 'TypeScript', icon: SiTypescript, color: '#3178c6', level: 'Intermediate' },
-        { name: 'Framer Motion', icon: SiFramer, color: '#000000', level: 'Advanced' },
-      ],
-    },
-    {
-      title: 'Backend & APIs',
-      skills: [
-        { name: 'Node.js', icon: FaNodeJs, color: '#68a063', level: 'Intermediate' },
-        { name: 'Express', icon: FaServer, color: '#ffffff', level: 'Intermediate' },
-        { name: 'MongoDB', icon: SiMongodb, color: '#13aa52', level: 'Intermediate' },
-        { name: 'REST API', icon: FaNetworkWired, color: '#ffffff', level: 'Advanced' },
-        { name: 'JWT Auth', icon: FaShieldAlt, color: '#f59e0b', level: 'Intermediate' },
+        { name: 'React', icon: FaReact, color: '#61dafb' },
+        { name: 'HTML5', icon: FaHtml5, color: '#e34c26' },
+        { name: 'CSS3', icon: FaCss3Alt, color: '#1572b6' },
       ],
     },
     {
       title: 'Tools & Deployment',
       skills: [
-        { name: 'Git', icon: FaGitAlt, color: '#f1502f', level: 'Advanced' },
-        { name: 'GitHub', icon: FaGithub, color: '#ffffff', level: 'Advanced' },
-        { name: 'Netlify', icon: SiNetlify, color: '#00c7b7', level: 'Advanced' },
-        { name: 'Vercel', icon: SiVercel, color: '#000000', level: 'Advanced' },
-        { name: 'Vite', icon: SiVite, color: '#646cff', level: 'Advanced' },
-        { name: 'Figma', icon: FaFigma, color: '#f24e1e', level: 'Intermediate' },
+        { name: 'Git', icon: FaGitAlt, color: '#f1502f' },
+        { name: 'GitHub', icon: FaGithub, color: '#ffffff' },
+        { name: 'Netlify', icon: SiNetlify, color: '#00c7b7' },
+        { name: 'Vercel', icon: SiVercel, color: '#000000' },
       ],
     },
     {
-      title: 'Testing & Quality',
-      subtitle: 'Tools I use to ship reliable code',
+      title: 'Additional Skills',
+      subtitle: 'Technologies I have experience working with',
       skills: [
-        { name: 'ESLint', icon: SiEslint, color: '#4b3263', level: 'Advanced' },
-        { name: 'Jest', icon: SiJest, color: '#c21325', level: 'Intermediate' },
-        { name: 'React Testing Library', icon: SiTestinglibrary, color: '#e3335f', level: 'Intermediate' },
-        { name: 'Chrome DevTools', icon: FaChrome, color: '#4285f4', level: 'Advanced' },
+        { name: 'Node.js', icon: FaNodeJs, color: '#68a063' },
+        { name: 'MongoDB', icon: SiMongodb, color: '#13aa52' },
       ],
     },
   ]
@@ -124,11 +101,10 @@ export default function Skills() {
                       className="skill-item"
                       variants={iconVariants}
                       whileHover="hover"
-                      title={`${skill.name} — ${skill.level}`}
+                      title={skill.name}
                     >
                       <Icon size={40} color={skill.color} />
                       <span>{skill.name}</span>
-                      <span className="skill-level">{skill.level}</span>
                     </motion.div>
                   )
                 })}

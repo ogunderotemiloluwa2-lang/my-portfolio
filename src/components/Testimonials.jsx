@@ -1,7 +1,7 @@
-import { FaStar } from 'react-icons/fa'
-import { motion } from 'framer-motion'
-import { testimonials } from '../data/testimonials'
-import './Testimonials.css'
+import { FaStar } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import { testimonials } from '../data/testimonials';
+import './Testimonials.css';
 
 function Testimonials() {
   const containerVariants = {
@@ -10,17 +10,17 @@ function Testimonials() {
       opacity: 1,
       transition: { staggerChildren: 0.1, delayChildren: 0.2 },
     },
-  }
+  };
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     hover: {
       y: -8,
-      boxShadow: '0 20px 40px rgba(224, 165, 74, 0.15)',
+      boxShadow: '0 20px 40px rgba(6, 182, 212, 0.2)',
       transition: { duration: 0.3 },
     },
-  }
+  };
 
   return (
     <section className="testimonials" id="testimonials">
@@ -32,9 +32,8 @@ function Testimonials() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="eyebrow">Feedback</span>
-          <h2 className="section-title">What clients say</h2>
-          <p className="testimonials-subtitle">Real feedback from people I've built for</p>
+          <h2>What Clients Say</h2>
+          <p>Real feedback from those who've worked with me</p>
         </motion.div>
 
         <motion.div
@@ -70,7 +69,7 @@ function Testimonials() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Testimonials
+export default Testimonials;
