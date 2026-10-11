@@ -33,7 +33,7 @@ function Testimonials() {
           transition={{ duration: 0.6 }}
         >
           <h2>What Clients Say</h2>
-          <p>Real feedback from those who've worked with me</p>
+          <p>Real feedback from clients and collaborators I've worked with</p>
         </motion.div>
 
         <motion.div
