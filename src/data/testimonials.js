@@ -1,14 +1,5 @@
 export const testimonials = [
   {
-    id: 1,
-    name: 'Adeola Badu',
-    company: 'LG CUT',
-    role: 'Owner',
-    text: 'Before this site, customers called me to book and I would forget half of them. Now they book online and I just check my phone. It paid for itself in the first month.',
-    rating: 5,
-    image: 'https://randomuser.me/api/portraits/women/68.jpg',
-  },
-  {
     id: 2,
     name: 'Chinedu Okonkwo',
     company: 'EventFlow',
