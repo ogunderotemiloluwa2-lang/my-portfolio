@@ -1,14 +1,5 @@
 export const testimonials = [
   {
-    id: 2,
-    name: 'Chinedu Okonkwo',
-    company: 'EventFlow',
-    role: 'Early User',
-    text: 'The check-in with QR codes saved us a long queue at the door. Samson was quick to fix a small issue we had on the day, which honestly mattered more than anything.',
-    rating: 5,
-    image: 'https://randomuser.me/api/portraits/men/75.jpg',
-  },
-  {
     id: 3,
     name: 'Tolu Adeyemi',
     company: 'Freelance',
