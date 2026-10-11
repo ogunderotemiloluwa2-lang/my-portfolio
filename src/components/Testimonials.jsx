@@ -26,17 +26,6 @@ function Testimonials() {
     <section className="testimonials" id="testimonials">
       <div className="container">
         <motion.div
-          className="section-header"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2>What Clients Say</h2>
-          <p>Real feedback from clients and collaborators I've worked with</p>
-        </motion.div>
-
-        <motion.div
           className="testimonials-grid"
           variants={containerVariants}
           initial="hidden"

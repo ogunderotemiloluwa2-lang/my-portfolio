@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Stats from './components/Stats'
 import About from './components/About'
 import ImpactStats from './components/ImpactStats'
 import Skills from './components/Skills'
@@ -21,7 +20,6 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Stats />
         <About />
         <ImpactStats />
         <Skills />
